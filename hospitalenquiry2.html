@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en" style="background-color: rgb(181, 176, 220);"></html>
+<html lang="nncxen">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+   <h1>HOSPITAL REGISTRATION FORM</h1>
+   <h3>Patient are required to register their information on this form</h3>
+     <img src="image/st(1).png">
+
+    <script>
+    function val(){
+        var chartnumber=document.form.chartnumber.value;
+        var registrationcheckId=document.form.registrationcheckId.value;
+         var registrationdate=document.form.registrationdate.value;
+         var registrationtime=document.form.registrationtime.value;
+         var healthcarenumber=document.form.healthcarenumber.value;
+         var name=document.form.name.value;
+         var address=document.form.address.value;
+         var phone=document.form.phone.value;
+         var email=document.form.email.value;
+         var dateofbirth=document.form.dateofbirth.value;
+       
+    if(chartnumber==""){
+        alert(" chartnumber is required");
+        return false;
+    }
+    if(registrationcheckId==""){
+        alert(" Id is required");
+         return false;
+       }
+    if(registrationdate=="" ){
+        alert(" date required");
+        return false;
+    }
+    if(registrationtime==""){
+        alert("time required");
+        return false;
+    }
+    if(healthcarenumber==""){
+        alert("number required");
+        return false;
+    }
+    if(name==""){
+        alert("name required");
+        return false;
+    }
+    if(address==""){
+        alert("empty address");
+        return false;
+    }
+    if(phone==""){
+        alert(" Phone required");
+        return false;
+    }
+    if(email==""){
+        alert(" email required");
+        return false;
+    }
+    if(dateofbirth==""){
+        alert("empty ");
+        return false;
+    }
+   header("location:dashboard3.php");
+}   
+    
+    
+
+    </script>
+</head>
+
+<body>
+    <form action=""  method="post" name="form" onsubmit="return val();">
+    <table>
+        <tr> 
+            <td>Chartnumber:</td>
+            <tr>
+             <tr>
+            <td> <input type="nu" name="chartnumber"></td>
+        </tr>
+        <tr>
+            <td>Registration checkId:</td>
+            <tr>
+            <tr>
+            <td> <input type="text" name="registrationcheckId"></td>
+        </tr>
+      
+        <tr>
+            <td> Registration Date:</td>
+            <tr>
+            <tr>
+            <td> <input type="date" name="registrationdate"></td>
+
+        </tr>
+        <tr>
+            <td>Registration Time:</td>
+            <tr>
+            <tr>
+            <td> <input type="time" name="registrationtime"></td>
+        </tr>
+        <tr>
+            <td>Health Number:</td>
+            <tr>
+            <tr>
+            <td> <input type="number" name="healthcarenumber"></td>
+        </tr>
+    </tr>
+    <tr>
+        <td>Patient name:</td>
+        <tr>
+        <tr>
+        <td> <input type="text" name="name"></td>
+    </tr>
+    <tr>
+        <td>Address:</td>
+        <tr>
+        <tr>
+        <td> <input type="text" name="address"></td>
+    </tr>
+    <tr>
+        <td>Phonenumber:</td>
+        <tr>
+        <tr>
+        <td> <input type="number" name="phone"></td>
+    </tr>
+        <tr>
+            <tr>
+                <td>Email:</td>
+                <tr>
+                <tr>
+                <td> <input type="email" name="email"></td>
+            </tr>
+                <tr>
+            <td>Sex:</td>
+            <tr>
+            <tr>
+            <td>
+                <select>
+                    <option value=""></option>
+                    <option value="male"> male</option>
+                    <option value="female"> female</option>
+                </select>
+            </td>
+            <tr>
+                <td>Date of birth:</td>
+                <tr>
+                <tr>
+                <td> <input type="date" name="dateofbirth"></td>
+            </tr>
+        </tr>
+      
+            <td> </td>
+            <td> <input type="submit" name="submit"></td>
+        </tr>
+
+    </table>
+</form>
+    
+</body>
+</html>
